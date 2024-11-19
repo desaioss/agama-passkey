@@ -12,8 +12,8 @@ user authentication with **Passkey**(passwordless authentication that uses
 a device to verify a user's identity before allowing them to access an account)
 2-factor authentication.
 
-## Where To Deploy
-
+## Where To Deploy   
+  
 The project can be deployed to any IAM server that runs an implementation of
 the [Agama Framework](https://docs.jans.io/head/agama/introduction/) like
 [Janssen Server](https://jans.io) and [Gluu Flex](https://gluu.org/flex/).
