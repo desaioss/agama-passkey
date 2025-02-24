@@ -29,7 +29,7 @@ Repeat 10 times max
           When E is not null
                // Show authentication process cancellation error
                obj.showError = false
-               obj.errorTitle = "Passkey failed to set a new nickname"
+               obj.errorTitle = Passkey failed to set a new nickname
                obj.errorMessage = E.message
      When listForm.cancelItemBtn is ""
           // Hide all processes (authentication and error message)
@@ -61,7 +61,7 @@ Repeat 10 times max
           // Show authentication process cancellation error
           obj.isAssertion = false
           obj.showError = true
-          obj.errorTitle = "Passkey authentication failed."
+          obj.errorTitle = Passkey authentication failed.
           obj.errorMessage = listForm.errorMessage
      When listForm.tokenResponse is not "" and listForm.tokenResponse is not null
           // Call the method to verify authentication with the passkey
@@ -70,12 +70,12 @@ Repeat 10 times max
                // Show verification errors with their details
                obj.showError = true
                obj.isAssertion = false
-               obj.errorTitle = "Passkey authentication failed."
+               obj.errorTitle = Passkey authentication failed.
                obj.errorMessage = E.message
           When E is null
                // Ends the flow and returns the user's inum
-               it_qeqor = {success:true, data: { userId: inum }}
-               Finish it_qeqor
+               it_foucn = {success:true, data: { userId: inum }}
+               Finish it_foucn
 // End flow with error because it has exceeded the limit of attempts.
-it_acdts = {success:false, error: "Passkey registration attempt exceeded"}
-Finish it_acdts
+it_cgvkt = {success:false, error: "Passkey registration attempt exceeded"}
+Finish it_cgvkt
